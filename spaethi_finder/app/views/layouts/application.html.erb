@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SpaethiFinder</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Spaethi Finder</title>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'application', :media => 'screen' %>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <%= image_tag("Title.png") %>
+        <%= image_tag("Laden.jpg") %>
+        <nav class="round">
+          <ul>
+            <li><%= link_to 'Neu', new_spaethi_path %></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="round">
+        <%= yield %>
+      </section>
+    </div>
+  </body>
 </html>
+
+

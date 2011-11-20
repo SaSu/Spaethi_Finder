@@ -1,0 +1,2 @@
+module SpaethisHelper
+end

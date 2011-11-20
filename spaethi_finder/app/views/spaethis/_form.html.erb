@@ -1,0 +1,45 @@
+<%= form_for(@spaethi) do |f| %>
+  <% if @spaethi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spaethi.errors.count, "error") %> prohibited this spaethi from being saved:</h2>
+
+      <ul>
+      <% @spaethi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :strasse %><br />
+    <%= f.text_field :strasse %>
+  </div>
+  <div class="field">
+    <%= f.label :hausnummer %><br />
+    <%= f.number_field :hausnummer %>
+  </div>
+  <div class="field">
+    <%= f.label :plz %><br />
+    <%= f.number_field :plz %>
+  </div>
+  <div class="field">
+    <%= f.label :stadt %><br />
+    <%= f.text_field :stadt %>
+  </div>
+  <div class="field">
+    <%= f.label :bezirk %><br />
+    <%= f.text_field :bezirk %>
+  </div>
+  <div class="field">
+    <%= f.label :sonstiges %><br />
+    <%= f.text_field :sonstiges %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @spaethi.name %>
+</p>
+
+<p>
+  <b>Strasse:</b>
+  <%= @spaethi.strasse %>
+</p>
+
+<p>
+  <b>Hausnummer:</b>
+  <%= @spaethi.hausnummer %>
+</p>
+
+<p>
+  <b>Plz:</b>
+  <%= @spaethi.plz %>
+</p>
+
+<p>
+  <b>Stadt:</b>
+  <%= @spaethi.stadt %>
+</p>
+
+<p>
+  <b>Bezirk:</b>
+  <%= @spaethi.bezirk %>
+</p>
+
+<p>
+  <b>Sonstiges:</b>
+  <%= @spaethi.sonstiges %>
+</p>
+
+
+<%= link_to 'Edit', edit_spaethi_path(@spaethi) %> |
+<%= link_to 'Back', spaethis_path %>
